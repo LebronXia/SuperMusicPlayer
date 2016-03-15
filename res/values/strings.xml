@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SuperMusicPlayer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">全部歌曲</string>
+    <string name="music">我爱音乐</string>
+    <string name="myApp">听风</string>
+
+</resources>

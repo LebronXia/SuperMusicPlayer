@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title">#EBEBEB</color>
+    <color name="list">#EFEFEF</color>  
+    <color name="minimusic">#5CACEE</color>
+    <color name="tvcolor">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+    <color name="bg_dark_tab">#ff0b1b1c</color>
+</resources>

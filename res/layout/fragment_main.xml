@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photo1"
+     >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:text="@string/title"
+        android:id="@+id/title"
+        android:textSize="30px"
+        android:gravity="center"
+        android:background="@color/minimusic"
+        android:textColor="@color/title"
+        android:padding="5dip"
+      />
+
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/ll_bottom"
+        >
+        
+      <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/title"
+        android:layout_height="match_parent" 
+        android:layout_above="@+id/ll_bottom"
+        android:divider="@null"
+       	android:background="@color/transparent"
+        android:fastScrollEnabled="true" 
+        />
+      
+      <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/show_head_toast_bg"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.xiamu.supermusicplayer.view.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+      </FrameLayout>
+   
+      <!-- 最底下那栏 -->
+        <LinearLayout
+          android:id="@+id/ll_bottom"
+          android:layout_width="fill_parent"
+          android:layout_height="56dp"
+          android:background="@color/transparent"
+          android:layout_alignParentBottom="true"
+          >
+
+            <ImageView
+                android:id="@+id/artIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/left2" />
+
+            <LinearLayout
+                 android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                
+                <TextView
+                android:id="@+id/musicTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/music"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginLeft="10dip"
+                  />
+                
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                    >
+                <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:src="@drawable/pre"
+                android:id="@+id/previoueBtn"
+                android:background="@color/transparent"
+                android:layout_weight="1"
+                />
+                
+                <ImageButton
+                    android:id="@+id/playBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                   
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/stop" />
+              
+                <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"          
+                android:id="@+id/nextBtn"
+                android:background="@color/transparent"
+                android:layout_weight="1"
+                />    
+               </LinearLayout>
+                 <SeekBar
+                  android:id="@+id/sb"
+                 android:layout_width="fill_parent"
+                 android:layout_height="4dip"
+                 android:layout_marginTop="5dip"
+                 android:thumb="@null"
+                />
+          </LinearLayout>
+      </LinearLayout>
+
+</RelativeLayout>
